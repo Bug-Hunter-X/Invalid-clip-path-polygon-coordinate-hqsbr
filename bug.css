@@ -1,0 +1,2 @@
+The following CSS rule uses an invalid property: `clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);`
+This will cause unexpected rendering in some browsers and may not work at all in others. The issue is due to the `50% 50%` coordinate being specified inside the polygon shape which is not a valid coordinate for the clipping path. A valid polygon must be specified by the vertices that form a closed shape. In this case, you should remove the `50% 50%` coordinate to make the polygon a valid shape and fix this issue. 
