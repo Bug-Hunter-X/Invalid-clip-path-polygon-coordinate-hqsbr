@@ -1,0 +1,9 @@
+The corrected CSS rule is as follows:
+
+```css
+.element {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+```
+
+This removes the extra `50% 50%` coordinate from the `polygon()` shape, thus making it a valid closed shape for the clipping path.  This results in the expected rendering of the element.
